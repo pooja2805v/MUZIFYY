@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Muzify</title>
+    <link rel="icon" href="music-logo/logo1.png">
+</head>
+<body>
+    <div class="otp-container">
+        <a href="forpas.html" class="back">
+            <img src="music-logo/back.png" class="back-img" alt="back">
+        </a>
+        <div class="logo">
+            <img src="Muzify-logo.png" alt="Muzify Logo">
+        </div>
+        <h2>Enter OTP Code</h2>
+        <p>We've sent a 6-digit code to your email.</p>
+
+        <form class="otp-form">
+            <div class="otp-inputs">
+                <input type="text" maxlength="1" required>
+                <input type="text" maxlength="1" required>
+                <input type="text" maxlength="1" required>
+                <input type="text" maxlength="1" required>
+                <input type="text" maxlength="1" required>
+                <input type="text" maxlength="1" required>
+            </div>
+
+            <button type="submit">Verify OTP</button>
+            <p class="resend">Didn't get the code? <a href="#">Resend OTP</a></p>
+            <a href="forpas.html">Change email or mobile number</a>
+        </form>
+    </div>
+    <style>
+        body {
+    font-family: Arial, sans-serif;
+    background: linear-gradient(120deg, black, #ff7300);
+    color: #fff;
+    display: flex;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+}
+
+a{
+    text-decoration: none;
+    color: #ffffff;
+}
+
+a:hover{
+    color: #000;
+}
+
+.back-img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    margin-top: 180px;
+    margin-left: 480px;
+    padding: 5px;
+    width: 50px !important;
+    height: 50px ;
+}
+
+.otp-container {
+    background-color: #ff7300;
+    padding: 40px 30px;
+    box-shadow: 10px 4px 15px rgb(0, 0, 0);
+    border-radius: 12px;
+    text-align: center;
+    width: 100%;
+    max-width: 350px;
+}
+
+.logo img {
+    width: 100px;
+    margin-bottom: 15px;
+}
+
+h2 {
+    margin: 10px 0;
+    font-size: 24px;
+}
+
+p {
+    font-size: 14px;
+    color: #e5e5e5;
+}
+
+.otp-form {
+    margin-top: 20px;
+}
+
+.otp-inputs {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
+.otp-inputs input {
+    width: 40px;
+    height: 40px;
+    font-size: 20px;
+    text-align: center;
+    border: 2px solid #fff;
+    border-radius: 6px;
+    background-color: transparent;
+    color: #fff;
+    background-color: #0000005b;
+    outline: none;
+}
+
+.otp-inputs input:focus {
+    border-color: #000;
+}
+
+button {
+    background-color: #000;
+    color:#ff7300;
+    border: none;
+    border-radius: 20px;
+    padding: 10px 20px;
+    cursor: pointer;
+    font-weight: bold;
+    margin-top: 20px;
+    width: 100%;
+}
+
+.resend {
+    margin-top: 15px;
+    font-size: 14px;
+}
+
+.resend a {
+    color: #000;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.resend a:hover {
+    text-decoration: underline;
+}
+    </style>
+</body>
+</html>

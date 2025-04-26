@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Muzify</title>
+    <link rel="icon" href="music-logo/logo1.png">
+</head>
+<body>
+    <div class="library-container">
+        <header class="header">
+            <a href="home.html" class="back"><img src="music-logo/back.png" height="8%" width="8%" alt=""></a>
+            <!-- <div class="profile-icon">A</div> -->
+            <h1>Your Library</h1>
+            <div class="header-icons">
+                <span><img src="music-logo/ic--round-search.png" style="width: 50px; filter: invert(1);" alt=""></span>
+                <span><img src="music-logo/ic--baseline-add.png" style="width: 50px; filter: invert(1);" alt=""></span>
+            </div>
+        </header>
+        
+        <div class="filter-buttons">
+            <button>Playlists</button>
+            <button>Podcasts</button>
+            <button>Albums</button>
+            <button>Artists</button>
+        </div>
+
+        <h2>Recents</h2>
+        
+        <div class="library-item">
+            <div class="icon liked-songs"></div>
+            <div class="item-info">
+                <p class="title">Liked Songs</p>
+                <p class="subtitle">Playlist • 250 songs</p>
+            </div>
+        </div>
+
+        <div class="library-item">
+            <div class="icon episodes"></div>
+            <div class="item-info">
+                <p class="title">Your Episodes</p>
+                <p class="subtitle">Saved & downloaded episodes</p>
+            </div>
+        </div>
+
+        <div class="library-item">
+            <div class="icon playlist"></div>
+            <div class="item-info">
+                <p class="title">vijay songs</p>
+                <p class="subtitle">Playlist • vijay</p>
+            </div>
+        </div>
+
+        <div class="library-item">
+            <div class="icon album"></div>
+            <div class="item-info">
+                <p class="title">Dear Comrade</p>
+                <p class="subtitle">Album • Justin Prabhakaran</p>
+            </div>
+        </div>
+
+        <div class="library-item">
+            <div class="icon podcast"></div>
+            <div class="item-info">
+                <p class="title">Story</p>
+                <p class="subtitle">Playlist </p>
+            </div>
+        </div>
+    </div>
+    <style>
+        body {
+    margin: 0;
+    padding: 0;
+    background-color: #121212;
+    color: white;
+    font-family: Arial, sans-serif;
+}
+
+.back{
+    position: absolute;
+    font-size: 40px;
+    margin-top: 10px;
+    text-decoration: none;
+    color: #ff7300;
+    filter: invert(1);
+}
+.library-container {
+    padding: 16px;color: #eef0e7;
+    font-size: 12px;
+}
+
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+/* .profile-icon {
+    background-color: #ff7300;
+    color: white;
+    font-weight: bold;
+    font-size: 30px;
+    width: 56px;
+    margin-left: 50px;
+    height: 56px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+} */
+
+.header-icons span {
+    margin-left: 12px;
+    font-size: 30px;
+    cursor: pointer;
+}
+
+.filter-buttons {
+    display: flex;
+    gap: 39px;
+    margin: 0px 0;
+}
+
+.filter-buttons button {
+    background-color: #282828;
+    color: white;
+    border: none;
+    padding: 15px 60px;
+    border-radius: 20px;
+    font-size: 12px;
+    cursor: pointer;
+}
+h1{
+    margin-left: 600px;
+    font-size: 30px;
+    font-family: arial,sans-serif;
+    animation: colorchange 5s infinite;
+}
+@keyframes colorchange {
+    0%{color:red;}
+    25%{ color: blue;}
+    50%{color:green;}
+    75%{color: orange;}
+    100%{color: purple;}
+}
+
+h2 {
+    font-size: 18px;
+    margin: 16px 0;
+}
+
+.library-item {
+    display: flex;color: #f6f7f0;
+    align-items: center;
+    margin: 40px 0;
+}
+
+.icon {
+    width: 50px;
+    height: 50px;
+    background-color: #333;
+    margin-right: 12px;
+    border-radius: 4px;
+}
+
+.liked-songs { background: linear-gradient(to bottom right, #6a5acd, #4b0082); }
+.episodes { background-color: green; }
+.playlist { background-color: #ea5307; }
+.album { background-color: #10a5cb; }
+.podcast { background-color: purple; }
+
+.item-info .title {
+    font-size: 15px;
+    font-weight: bold;
+    margin: 0;
+}
+
+.item-info .subtitle {
+    font-size: 15px;
+    color: #aaa;
+    margin: 2px 0 0;
+}
+    </style>
+</body>
+</html>

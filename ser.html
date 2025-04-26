@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Muzify</title>
+    <link rel="icon" href="music-logo/logo1.png">
+</head>
+<body>
+
+    <div class="container">
+        
+        <header>
+            <a href="home.html" class="back"><img src="music-logo/back.png" height="50px" width="50px" alt=""></a>
+            <!-- <div class="profile-icon">A</div> -->
+            <h1>Search</h1>
+            <div class="camera-icon">
+                <h6 class="icon">📷</h6>
+            </div>
+        </header>
+
+        <div class="search-bar">
+            <input type="text" placeholder="What do you want to listen to?">
+        </div>
+
+        <section class="browse-section">
+            <h2>Start browsing</h2>
+            <div class="browse-cards">
+                <div class="card music">Music</div>
+                <div class="card podcasts">Podcasts</div>
+                <div class="card live-events">Live Events</div>
+                <div class="card i-pop">Home of I-Pop</div>
+            </div>
+        </section>
+
+        <section class="discover-section">
+            <h2>Discover something new</h2>
+            <div class="discover-cards">
+                <div class="discover-card">#kollywood</div>
+                <div class="discover-card">#telugu pop</div>
+                <div class="discover-card">#pleasant</div>
+            </div>
+        </section>
+    </div>
+    <style>
+    body {
+        font-family: Arial, sans-serif;
+        background-color: #121212;
+        color: white;
+        margin: 0;
+        padding: 0;
+    }
+    
+    .icon{
+        font-size: 42px;
+    }
+    .container {
+        padding: 20px;
+    }
+    
+    .back{
+        position: absolute;
+        filter: invert(1);
+        margin-top: 10px;
+    }
+    header {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    header h1{
+        margin-left: 600px;
+    }
+    
+    /* .profile-icon,  */
+    .camera-icon {
+        background-color: #ff7300;
+        color: white;
+        padding: 30px;
+        border-radius: 50%;
+        text-align: center;
+        width: 10px;
+        height: 10px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .camera-icon{
+        justify-content: center;
+    }
+    
+    /* .profile-icon{
+        margin-left: 60px;
+    } */
+    .search-bar {
+        margin: 20px 0;
+    }
+    
+    .search-bar input {
+        width: 100%;
+        padding: 15px;
+        border-radius: 25px;
+        border: none;
+        font-size: 16px;
+        background-color: #2a2a2a;
+        color: white;
+    }
+    
+    
+    .browse-section h2, .discover-section h2 {
+        margin-bottom: 10px;
+    }
+    
+    .browse-cards {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 10px;
+    }
+    
+    .card {
+        padding: 20px;
+        text-align: center;
+        border-radius: 10px;
+        font-weight: bold;
+    }
+    
+    .music { background-color: #e91e63; }
+    .podcasts { background-color: #00796b; }
+    .live-events { background-color: #673ab7; }
+    .i-pop { background-color: #271a7e; }
+    
+    
+    .discover-cards {
+        display: flex;
+        gap: 10px;
+        overflow-x: auto;
+        padding-bottom: 10px;
+    }
+    
+    .discover-card {
+        flex:  30%;
+        padding: 20px;
+        background-color: #333;
+        border-radius: 10px;
+        text-align: center;
+        font-weight: bold;
+    }
+</style>
+
+</body>
+</html>

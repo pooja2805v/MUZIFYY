@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Muzify</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="music-logo/logo1.png">
+    <style>
+        * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background-color: #121212;
+    color: white;
+    line-height: 1.6;
+}
+
+header {
+    background-color: black;
+    padding: 15px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    font-size: 24px;
+    font-weight: bold;
+    color: #ff7300;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.hero {
+    text-align: center;
+    padding: 50px 20px;
+    background-color: #ff7300;
+    color: black;
+}
+
+.hero h1 {
+    font-size: 36px;
+    margin-bottom: 10px;
+}
+
+.hero p {
+    margin-bottom: 20px;
+    font-size: 18px;
+}
+
+.cta-btn {
+    padding: 10px 20px;
+    background-color: black;
+    color: white;
+    border: none;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.plans {
+    padding: 50px 20px;
+    text-align: center;
+}
+
+.plan-cards {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin-top: 20px;
+}
+
+.plan-card {
+    background-color: #1e1e1e;
+    padding: 20px;
+    border-radius: 8px;
+    width: 200px;
+    text-align: center;
+}
+
+.plan-card h3 {
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+.plan-card p {
+    margin-bottom: 10px;
+}
+
+.plan-card a {
+    background-color: #ff7300;
+    border: none;
+    padding: 8px 15px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+footer {
+    background-color: black;
+    text-align: center;
+    padding: 10px;
+    font-size: 14px;
+    margin-top: 20px;
+}
+
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <a href="index.html"><div class="logo">Muzify</div></a>
+            <ul>
+                <li><a href="">Premium</a></li>
+                <li><a href="">Support</a></li>
+                <li><a href="">Download</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="hero">
+        <h1>Get Premium Free For 1 Month</h1>
+        <p>Just ₹119/month after. Cancel anytime.</p>
+        <button class="cta-btn">Get Started</button>
+    </section>
+
+    <section class="plans">
+        <h2>Choose your Premium</h2>
+        <p>Listen without limits on your phone, speaker, and other devices.</p>
+
+        <div class="plan-cards">
+            <div class="plan-card">
+                <h3>Individual</h3>
+                <p>₹119/month</p>
+                <p>1 account</p>
+                <a href="payment.html">Get Started</a>
+            </div>
+
+            <div class="plan-card">
+                <h3>Duo</h3>
+                <p>₹149/month</p>
+                <p>2 accounts</p>
+                <a href="payment.html">Get Started</a>
+            </div>
+
+            <div class="plan-card">
+                <h3>Family</h3>
+                <p>₹179/month</p>
+                <p>6 accounts</p>
+                <a href="payment.html">Get Started</a>
+            </div>
+        </div>
+    </section>
+    <footer>
+        <p>&copy; 2025 Muzify. All rights reserved.</p>
+    </footer>
+</body>
+</html>

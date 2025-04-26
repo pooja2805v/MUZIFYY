@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Muzify</title>
+    <link rel="icon" href="music-logo/logo1.png">
+    <style>
+        /* Hide the iframe to show only the audio */
+        #youtubePlayer {
+            display: none;
+        }
+    </style>
+</head>
+<body>
+
+<!-- Image to trigger the audio -->
+<img src="your-image.jpg" alt="Click to Play Song" id="image" style="cursor: pointer; width: 300px;">
+
+<!-- YouTube Video Embed -->
+<div id="player"></div>
+
+<script>
+    // Create a YouTube player using the YouTube Iframe API
+    let player;
+
+    // Load the Iframe Player API script
+    function loadPlayerAPI() {
+        const script = document.createElement('script');
+        script.src = 'https://www.youtube.com/iframe_api';
+        document.body.appendChild(script);
+    }
+
+    // This function will be called when the YouTube API is ready
+    function onYouTubeIframeAPIReady() {
+        // Create the player in the 'player' div with autoplay and muted options
+        player = new YT.Player('player', {
+            height: '0',
+            width: '0',
+            videoId: 'U1JLtpJTe84', // Replace with your YouTube video ID
+            playerVars: {
+                autoplay: 1, // Auto start the video
+                mute: 1, // Mute initially (you can remove this if you want sound right away)
+                controls: 0, // Hide video controls
+                showinfo: 0, // Hide info
+                rel: 0, // Hide related videos at the end
+                iv_load_policy: 3 // Hide annotations
+            }
+        });
+    }
+
+    // Event listener for the image click to start the audio
+    const image = document.getElementById('image');
+    image.addEventListener('click', function() {
+        // Trigger the audio play on click
+        if (player) {
+            player.playVideo();
+        }
+    });
+
+    // Load the YouTube API
+    loadPlayerAPI();
+</script>
+
+</body>
+</html>

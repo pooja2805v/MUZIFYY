@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Muzify</title>
+    <link rel="icon" href="music-logo/logo1.png">
+</head>
+<body>
+    <div class="container">
+        <a href="index.html" class="back">
+            <img src="music-logo/back.png" class="back-img" alt="back">
+        </a>
+        <div class="logo">
+            <img src="music-logo/logo1.png" alt="Muzify Logo">
+        </div>
+        <h1>Password Reset</h1>
+        <p style="color: #ffffff;">
+            Enter your <strong>Muzify username</strong>, or the <strong>email address</strong> that you used to register. 
+            We'll send you an email with your username and a link to reset your password.
+        </p>
+
+        <form>
+            <label for="email">Email address or Mobile number</label>
+            <input type="text" id="email" placeholder="Email address or Mobile number" required>
+
+            <button type="submit"><a href="otp.html">Send</a></button>
+        </form>
+
+        <p class="support-text">
+            If you still need help, contact <a href="#">Muzify Support</a>.
+        </p>
+    </div>
+    <style>
+body {
+    font-family: Arial, sans-serif;
+    background: linear-gradient(120deg, black, #ff7300);
+    display: flex;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+}
+
+.back-img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    margin-top: 130px;
+    margin-left: 450px;
+    padding: 5px;
+    filter: invert(1);
+    width: 50px !important;
+    height: 50px ;
+}
+
+.container {
+    background-color: #ff7300;
+    padding: 40px 30px;
+    width: 100%;
+    color: aliceblue;
+    max-width: 400px;
+    box-shadow: 10px 4px 15px #000000;
+    border-radius: 10px;
+    text-align: center;
+}
+
+.logo img {
+    width: 50px;
+    margin-bottom: 20px;
+}
+
+h1 {
+    color: #ffffff;
+    margin-bottom: 10px;
+}
+
+p {
+    color: #ffffff;
+    font-size: 14px;
+    line-height: 1.5;
+}
+
+label {
+    display: block;
+    text-align: left;
+    margin: 15px 0 5px;
+    font-weight: bold;
+}
+
+input[type="text"] {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+
+button {
+    background-color: rgb(85, 85, 85);
+    color: #ffffff;
+    border: none;
+    width: 100%;
+    padding: 12px;
+    border-radius: 5px;
+    margin-top: 15px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+a{
+    text-decoration: none;
+    color: #ffffff;
+}
+
+button:hover {
+    background-color: rgb(0, 0, 0);
+}
+
+.support-text {
+    margin-top: 20px;
+    font-size: 13px;
+    color: #ffffff;
+}
+
+.support-text a {
+    color: #ffffff;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.support-text a:hover {
+    text-decoration: underline;
+}
+    </style>
+</body>
+</html>

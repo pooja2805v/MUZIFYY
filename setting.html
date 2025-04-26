@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Muzify</title>
+    <link rel="icon" href="music-logo/logo1.png">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+
+        body {
+            background-color:#000;
+            color: white;
+            height: 100vh;
+            width: 100%;
+            overflow: hidden;
+        }
+
+        .settings-container {
+            width: 100%;
+            height: 100vh;
+            overflow-y: auto;
+            background-color: #000;
+            padding: 20px;
+        }
+
+        .profile-section {
+            display: flex;
+            align-items: center;
+            padding: 20px 0;
+            border-bottom: 1px solid #333;
+        }
+
+        .profile-pic img {
+            filter: blur(1);
+            width: 60px;
+            height: 60px;
+            border-radius: 50%;
+            background-color: #555;
+            object-fit: cover;
+        }
+
+        .profile-info {
+            margin-left: 15px;
+        }
+
+        .profile-info h3 {
+            font-size: 18px;
+            margin-bottom: 5px;
+        }
+
+        .profile-info p {
+            font-size: 18px;
+            color: #ff7300;
+        }
+
+        .settings-list {
+            padding: 10px 0;
+        }
+
+        .setting-item {
+            padding: 15px 0;
+            border-bottom: 1px solid #222;
+        }
+
+        .setting-item h4 {
+            font-size: 18px;
+            color: white;
+            margin-bottom: 3px;
+        }
+
+        .setting-item p {
+            font-size: 12px;
+            color: #ff7300;
+        }
+
+        .settings-item {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 15px 0;
+            border-bottom: 1px solid #222;
+        }
+
+        .settings-item .text {
+            flex: 1;
+        }
+
+        .settings-item h4 {
+            font-size: 18px;
+            color: white;
+            margin-bottom: 3px;
+        }
+
+        .settings-item p {
+            font-size: 18px;
+            color: #ff7300;
+        }
+
+        .close-account-btn {
+            background-color: white;
+            color: rgb(255, 255, 255);
+            padding: 8px 12px;
+            width: 100%;
+            font-size: 12px;
+            cursor: pointer;
+            border-radius: 5px;
+            font-weight: bold;
+            white-space: nowrap;
+            transition: all 0.3s ease;
+        }
+
+        
+
+        .logout-button {
+            width: 100%;
+            padding: 12px;
+            background-color: #ff7300;
+            color: rgb(255, 255, 255);
+            border: none;
+            border-radius: 5px;
+            margin-top: 15px;
+            cursor: pointer;
+            text-align: center;
+            font-size: 14px;
+            font-weight: bold;
+            text-transform: uppercase;
+        }
+
+        a{
+            text-decoration: none;
+            color: #fff;
+        }
+        
+        .logout-button:hover {
+            background-color: #b71c1c;
+        }
+
+    </style>
+</head>
+<body>
+
+<div class="settings-container">
+
+    <div class="profile-section">
+        <div class="profile-pic">
+        <img src="music-logo/account.png" alt="Profile">
+        </div>
+        <div class="profile-info">
+            <a href="account.html">
+                <h3>Account</h3>
+            </a>
+            <p >Username • Email</p>
+        </div>
+    </div>
+
+    <div class="settings-list">
+
+        <div class="setting-item">
+            <h4><img src="music-logo/music-solid-24.png" style="width: 20px; filter: invert(1);" alt="">  Content and display</h4>
+            <p >Languages for music • App language</p>
+        </div>
+
+        <div class="setting-item">
+            <h4><img src="music-logo/volume-full-solid-24.png" style="width: 20px; filter: invert(1);" alt="">  Playback</h4>
+            <p >Gapless playback • Autoplay</p>
+        </div>
+
+        <div class="setting-item">
+            <h4><img src="music-logo/lock-solid-24.png" style="width: 20px; filter: invert(1);" alt="">  Privacy and social</h4>
+            <p >Recently played artists • Followers and following</p>
+        </div>
+
+        <div class="setting-item">
+            <h4><img src="music-logo/bell-solid-24.png" style="width: 20px; filter: invert(1);" alt="">  Notifications</h4>
+            <p >Push • Email</p>
+        </div>
+
+        <div class="setting-item">
+            <h4><img src="music-logo/technology_16672975.png" style="width: 20px; filter: invert(1);" alt="">  Apps and devices</h4>
+            <p >Google Maps • Spotify Connect control</p>
+        </div>
+
+        <div class="setting-item">
+            <h4><img src="music-logo/download_12290421.png" style="width: 20px; filter: invert(1);" alt=""> Data-saving and offline</h4>
+            <p >Data Saver • Downloads over cellular</p>
+        </div>
+
+        <div class="setting-item">
+            <h4><img src="music-logo/certificate_1989263.png" style="width: 20px; filter: invert(1);" alt="">  Media quality</h4>
+            <p >Wi-Fi streaming quality • Cellular streaming quality</p>
+        </div>
+
+        <div class="setting-item">
+            <h4><img src="music-logo/add.jpeg" style="width: 20px; filter: invert(1);" alt="">  Advertisements</h4>
+            <p >Tailored ads</p>
+        </div>
+
+        <div class="settings-item">
+            <div class="text">
+                <h4><img src="music-logo/info-circle-regular-24.png" style="width: 20px; filter: invert(1);" alt="">  About</h4>
+                <p >Version • Privacy Policy</p>
+            </div>
+            <a href="acc_cls.html"><p class="close-account-btn">Close your Account</p></a>
+        </div>
+
+        <a href="index.html"><p class="logout-button">Log out</p></a>
+
+    </div>
+</div>
+</body>
+</html>

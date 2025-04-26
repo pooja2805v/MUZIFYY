@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Muzify</title>
+    <link rel="icon" href="music-logo/logo1.png">
+</head>
+<body>
+
+ <div class="container">
+    <h2 style="color: #e4110a;">Account details</h2>
+    <div class="account-details">
+        <p><strong>Username</strong></p>
+        <p class="detail">gvhdkshdjnd2398</p>
+        
+        <p><strong>Email</strong></p>
+        <p class="detail">sam@gmail.com</p>
+    </div><hr>
+
+    <h2 style="color: #e4110a;">Your plan</h2>
+   
+    <div class="plan-container">
+        <span class="plan-text">Free plan</span>
+        <a href="#popup"><h3 class="plan">View your plan</h3></a>
+    </div>
+    <!-- ---------popup-------- -->
+    <div id="popup" class="popup">
+        <h1>YOUR PLAN</h1>
+        <h2>Duo</h2>
+        <h3>$149/Month</h3>
+        <h3>2 Account</h3>
+        <p class="exp">Expired in 2 Week</p>
+        <a class="can" href="">Cancle Your Plan</a>  <a class="can" href="payment.html">Recharge Now</a>
+        <a href="#" class="close">Close</a>
+    </div>
+
+       <!-- ------------------- -->
+    <hr>
+
+    <p class="delete-text">
+        To delete your data permanently, <a href="acc_cls.html" style="color: #e4110a;">close your account</a>.
+    </p>
+</div>
+<style>
+body{
+background-color: rgb(0, 0, 0);
+color: antiquewhite;
+}
+
+.exp{
+    color: red;
+}
+
+.plan-container {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.can{
+    background-color: #ff7300;
+}
+
+.plan-icon {
+    width: 24px; 
+    height: 24px;
+}
+
+a{
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+}
+
+.plan{
+    background-color: #c41c17;
+}
+
+.plan-text {
+    font-weight: bold;
+}
+
+.view-plan-link {
+    font-weight: bold;
+    color: blue; 
+    text-decoration: none;
+}
+
+.view-plan-link:hover {
+    text-decoration: underline;
+}
+
+.popup {
+    outline-style: solid;
+    outline-color: #ff7300;
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: rgba(0, 0, 0, 0.801);
+    color: white;
+    padding: 20px;
+    border-radius: 10px;
+    width: 250px;
+    text-align: center;
+
+}
+
+#popup:target {
+    display: block;
+}
+
+.close {
+    display: block;
+    margin-top: 10px;
+    color: white;
+    text-decoration: none;
+    background: red;
+    border-radius: 5px;
+    padding: 5px 10px;
+}
+</style>
+
+</body>
+</html>

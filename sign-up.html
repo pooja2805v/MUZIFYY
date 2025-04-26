@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Muzify</title>
+    <link rel="icon" href="music-logo/logo1.png">
+    
+</head>
+<body>
+    <div class="signup-container">
+        <h1>Sign Up for Muzify</h1>
+        <form action="#">
+            <label for="email">Email Address</label>
+            <input type="email" id="email" placeholder="Enter your email" required>
+
+            <label for="username">Mobile Number</label>
+            <input type="text" id="username" placeholder="Enter your Mobile Number" required>
+
+            <label for="password">Password</label>
+            <input type="password" id="password" placeholder="Create a password" required>
+
+            <label for="dob">Date of Birth</label>
+            <input type="date" id="dob" required>
+
+            <label for="gender">Gender</label>
+            <select id="gender">
+                <option value="male">Male</option>
+                <option value="female">Female</option>
+                <option value="non-binary">Non-binary</option>
+                <option value="prefer-not">Prefer not to say</option>
+            </select>
+            <a href="t&c.html">Terms and Conditions</a>
+            <a href="home.html"><p class="sub" type="submit">Sign Up</p></a>
+        </form>
+        <p>Already have an account? <a href="index.html">Log in here</a></p>
+        
+    </div>
+    <style>
+        body {
+    font-family: Arial, sans-serif;
+    background: linear-gradient(120deg, black, #ff7300);
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.sub{
+    background-color: #000;
+    color: #fff;
+    height: 30px;
+    padding-top: 10px;
+    border-radius: 10px;
+}
+
+.signup-container {
+    background-color: #ff7300;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+    width: 100%;
+    max-width: 400px;
+    text-align: center;
+}
+
+h1 {
+    margin-bottom: 20px;
+    font-size: 24px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+label {
+    font-weight: bold;
+    text-align: left;
+}
+
+input, select {
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    width: 100%;
+}
+
+button {
+    background-color: #000;
+    color: #ff7300;
+    padding: 12px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+    font-size: 16px;
+}
+
+button:hover {
+    background-color: #333;
+}
+
+p {
+    margin-top: 20px;
+}
+
+a {
+    color: #000;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+    </style>
+</body>
+</html>

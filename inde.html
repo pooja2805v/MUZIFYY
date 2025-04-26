@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Muzify</title>
+    <link rel="icon" href="music-logo/logo1.png">
+    <link rel="stylesheet" href="styles.css">
+    <!-- <meta http-equiv="refresh" content="5; url=index.html"> -->
+
+</head>
+<body>
+    <div class="container">
+        <img src="music-logo/lo.png" class="bg" alt="">
+        <div class="logo">
+            <span>M</span> 
+            <span>U</span>
+            <span>Z</span>
+            <span>I</span>
+            <span>F</span>
+            <span>Y</span>
+
+        </div>
+        
+    <style>
+        body {
+    margin: 0;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    background: linear-gradient(120deg,#fcfbfb,black);
+    align-items: center;
+    overflow: hidden;
+}
+
+.bg{
+    /* width: 500px; */
+    position: absolute;
+    z-index: -1;
+    margin-top: 100px;
+}
+
+.container {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.logo span {
+    font-size: 150px;
+    font-weight: bold;
+    color: rgb(255, 255, 255);
+    text-shadow: 0 0 20px rgb(226, 46, 22);
+    animation: zoomIn 2s ease-in-out forwards, glow 1s infinite alternate;
+    opacity: 0;
+}
+
+@keyframes zoomIn {
+    0% {
+        transform: scale(0);
+        opacity: 0;
+    }
+    50% {
+        transform: scale(1.2);
+        opacity: 0.5;
+    }
+    100% {
+        transform: scale(1);
+        opacity: 1;
+    }
+}
+
+@keyframes glow {
+    0% {
+        text-shadow: 0 0 20px #ffffff;
+    }
+    100% {
+        text-shadow: 0 0 40px #000000;
+    }
+}
+    </style>
+</body>
+</html>
